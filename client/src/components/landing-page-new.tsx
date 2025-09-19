@@ -38,8 +38,18 @@ export function LandingPageNew() {
 
         {/* Key Features Section */}
         <section className="py-20 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12">The Smartest AI Assistants You'll Ever Hire:</h2>
+          <div className="max-w-6xl mx-auto">
+            {/* Header with Gold Badge */}
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
+              <div className="text-center md:text-left md:flex-1">
+                <h2 className="text-3xl md:text-4xl font-bold">The Smartest AI Assistants You'll Ever Hire:</h2>
+              </div>
+              <div className="mt-8 md:mt-0 md:ml-8 flex justify-center">
+                <img src="/assets/gold-badge-award.png" alt="Gold Award" className="max-w-48 md:max-w-56" />
+              </div>
+            </div>
+            
+            <div className="max-w-4xl mx-auto text-center">
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="text-lg">
                 <div className="flex items-center justify-center mb-4">
@@ -70,12 +80,8 @@ export function LandingPageNew() {
             <a href="#pricing" className="bg-yellow-400 text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-500 transition-colors inline-block">
               GET YOUR OFFER
             </a>
+            </div>
           </div>
-        </section>
-
-        {/* Gold Badge Section */}
-        <section className="py-20 px-4 text-center">
-          <img src="/assets/gold-badge-award.png" alt="Gold Award" className="mx-auto mb-8 max-w-xs" />
         </section>
 
         {/* Evolution Section */}
